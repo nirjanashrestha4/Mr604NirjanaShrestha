@@ -222,7 +222,27 @@ BilateralOnly, and Full CVAF-SwinB configurations*
 | **CVAF-SwinB (Ours)**| CBIS-DDSM | **0.7518** |
 
 ---
+## Repository Structure
 
+```
+📦 codes/
+├── 📓 Notebook 1 - the proposed model.ipynb        # Main CVAF-SwinB model training
+├── 📓 Notebook 2 — 1_1 Undersampling.ipynb         # Training with 1:1 undersampling
+├── 📓 notebook-3-3-1-undersampling.ipynb            # Training with 3:1 undersampling
+├── 📓 notebook-4-3-1-oversampling.ipynb             # Training with 3:1 oversampling
+├── 📓 Notebook 5 — Ablation_Study.ipynb             # Ablation study experiments
+├── 📄 model.py                                      # CVAF-SwinB architecture
+├── 📄 model_ablation.py                             # Ablation variant architectures
+├── 📄 train.py                                      # Main training script
+├── 📄 train_ablation.py                             # Ablation study training script
+├── 📄 dataset.py                                    # Base dataset loader
+├── 📄 dataset_oversample_3to1.py                    # Dataset with 3:1 oversampling
+├── 📄 dataset_undersample_1to1.py                   # Dataset with 1:1 undersampling
+└── 📄 dataset_undersample_3to1.py                   # Dataset with 3:1 undersampling
+```
+
+---
+               
 ## Dataset
 
 | Dataset     | Source                                                    | Licence               |
